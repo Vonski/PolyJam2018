@@ -16,11 +16,10 @@ public class CollisionController : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("hehe");
         if (collision.gameObject.tag == "Player")
-            Debug.Log("player");
+            ;
         else if (collision.gameObject.tag == "Obstacle")
-            Debug.Log("Obstacle");
+            ;
         
 
     }
