@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CollisionController : MonoBehaviour {
-
+    AudioClip clip;
+    bool changed_clip=false;
 	// Use this for initialization
 	void Start () {
-		
+        clip = this.GetComponent<AudioSource>().clip;
 	}
 	
 	// Update is called once per frame
@@ -16,8 +17,16 @@ public class CollisionController : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
-            ;
+        if (collision.gameObject.tag == "Player") {
+            AudioClip tmp = this.GetComponent<AudioSource>().clip;
+            this.GetComponent<AudioSource>().clip = collision.gameObject.GetComponent<AudioSource>().clip;
+            collision.gameObject.GetComponent<AudioSource>().clip=tmp;
+            if (this.GetComponent<AudioSource>().clip != clip)
+                changed_clip = true;
+            else
+                changed_clip = false;
+
+        }
         else if (collision.gameObject.tag == "Obstacle")
             ;
         
