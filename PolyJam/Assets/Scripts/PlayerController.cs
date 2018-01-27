@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour {
             else
                 speed = maxSpeed;
         }
-        else
+        else if (!Input.GetButton("Deceleration"))
         {
             if (speed > 0)
                 speed -= speedDelta * passiveSpeedLoss;
