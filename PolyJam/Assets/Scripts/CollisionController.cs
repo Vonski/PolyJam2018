@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollisionController : MonoBehaviour {
     AudioClip clip;
     bool changed_clip=false;
+    bool collisionDoneOnce = false;
 	// Use this for initialization
 	void Start () {
         clip = this.GetComponent<AudioSource>().clip;
@@ -19,6 +20,17 @@ public class CollisionController : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Player")
         {
+            if(collisionDoneOnce)
+            {
+                collisionDoneOnce = false;
+                collision.gameObject.GetComponent<CollisionController>().collisionDoneOnce = false;
+            }
+            else
+            {
+                collisionDoneOnce = true;
+                collision.gameObject.GetComponent<CollisionController>().collisionDoneOnce = true;
+                return;
+            }
             AudioClip tmp = this.GetComponent<AudioSource>().clip;
             this.GetComponent<AudioSource>().clip = collision.gameObject.GetComponent<AudioSource>().clip;
             collision.gameObject.GetComponent<AudioSource>().clip = tmp;
