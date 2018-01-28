@@ -103,5 +103,6 @@ public class CameraController : MonoBehaviour {
             transform.position = new Vector3(xPos, yPos, -10);
         }
 
+        GetComponent<ScreenshakeController>().AddScreenShake();
 	}
 }

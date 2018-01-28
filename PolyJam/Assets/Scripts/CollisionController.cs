@@ -17,10 +17,11 @@ public class CollisionController : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player") {
+        if (collision.gameObject.tag == "Player")
+        {
             AudioClip tmp = this.GetComponent<AudioSource>().clip;
             this.GetComponent<AudioSource>().clip = collision.gameObject.GetComponent<AudioSource>().clip;
-            collision.gameObject.GetComponent<AudioSource>().clip=tmp;
+            collision.gameObject.GetComponent<AudioSource>().clip = tmp;
             if (this.GetComponent<AudioSource>().clip != clip)
                 changed_clip = true;
             else
@@ -28,8 +29,14 @@ public class CollisionController : MonoBehaviour {
 
         }
         else if (collision.gameObject.tag == "Obstacle")
-            ;
-        
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<ScreenshakeController>().isShaking = true;
+        else
+        {
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<ScreenshakeController>().isShaking = true;
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<ScreenshakeController>().startTime = Time.time;
+        }
+            
+
 
     }
 }

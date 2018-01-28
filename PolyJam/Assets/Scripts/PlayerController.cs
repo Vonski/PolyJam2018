@@ -69,6 +69,10 @@ public class PlayerController : MonoBehaviour {
             else
                 speed = 0;
         }
+        if (Input.GetButtonDown("P" + id + "_SayMessage"))
+        {
+            GetComponent<AudioSource>().Play();
+        }
 
         actualAngle = Mathf.Lerp(actualAngle, targetAngle, rotationSpeed);
         actualDirection = Vector2.Lerp(actualDirection, targetDirection, directionRotationSpeed).normalized;
