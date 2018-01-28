@@ -1,4 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 021fbe37df42632408032671ff6a7f71
+timeCreated: 1517142945
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+=======
 guid: a27c5bb6c28e282458dbffbf25a20ae5
 timeCreated: 1517142941
 licenseType: Free
@@ -9,12 +20,16 @@ TextureImporter:
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+>>>>>>> master
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
+<<<<<<< HEAD
+=======
     mipMapsPreserveCoverage: 0
     alphaTestReferenceValue: 0.5
+>>>>>>> master
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -30,6 +45,16 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
+<<<<<<< HEAD
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: -1
+  nPOTScale: 1
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+=======
     serializedVersion: 2
     filterMode: 0
     aniso: 0
@@ -41,6 +66,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
+>>>>>>> master
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,9 +74,15 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaUsage: 1
+<<<<<<< HEAD
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 0
+=======
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
+>>>>>>> master
   textureShape: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
@@ -58,6 +90,8 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+<<<<<<< HEAD
+=======
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -69,18 +103,25 @@ TextureImporter:
   - buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
+>>>>>>> master
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+<<<<<<< HEAD
+=======
     androidETC2FallbackOverride: 0
+>>>>>>> master
   spriteSheet:
     serializedVersion: 2
     sprites: []
     outline: []
+<<<<<<< HEAD
+=======
     physicsShape: []
+>>>>>>> master
   spritePackingTag: 
   userData: 
   assetBundleName: 
