@@ -24,6 +24,14 @@ public class AnimationController : MonoBehaviour {
                 if (list_iter == sprites.Count)
                     list_iter = 0; 
             last_time = current_time;
+
+            if (gameObject.tag == "girl")
+            {
+                Debug.Log("girl");
+                Destroy(gameObject.GetComponent<PolygonCollider2D>());
+                //gameObject.GetComponent<PolygonCollider2D>().enabled = false;
+                gameObject.AddComponent<PolygonCollider2D>();
+            }
         }
 
 	}
