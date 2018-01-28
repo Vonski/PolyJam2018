@@ -29,9 +29,9 @@ public class CameraDirectionChangeController : MonoBehaviour {
                 {
                     myCamera.GetComponent<CameraController>().yConst = transform.position.y;
                     if (myDirectionChange == cameraDirection.LEFT)
-                        myCamera.GetComponent<CameraController>().xStop = transform.position.x - 3.5f;
+                        myCamera.GetComponent<CameraController>().xStop = transform.position.x;
                     else
-                        myCamera.GetComponent<CameraController>().xStop = transform.position.x + 3.5f;
+                        myCamera.GetComponent<CameraController>().xStop = transform.position.x;
 
                 }
                 if (myDirectionChange == cameraDirection.UP || myDirectionChange == cameraDirection.DOWN)
