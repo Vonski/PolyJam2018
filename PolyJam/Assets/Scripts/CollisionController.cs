@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollisionController : MonoBehaviour {
     AudioClip clip;
-    bool changed_clip=false;
+    public bool changed_clip=false;
     bool collisionDoneOnce = false;
 	// Use this for initialization
 	void Start () {
