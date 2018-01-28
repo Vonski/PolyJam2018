@@ -1,9 +1,18 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: e7b1075cc7d10b640bfed4445cc7391a
 timeCreated: 1517095155
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
+=======
+guid: 638b5242cbb4a3f4484b30af4808e786
+timeCreated: 1517094764
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName: {}
+  externalObjects: {}
+>>>>>>> Stashed changes
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -12,6 +21,11 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
+<<<<<<< Updated upstream
+=======
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+>>>>>>> Stashed changes
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -27,10 +41,20 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
+<<<<<<< Updated upstream
     filterMode: -1
     aniso: -1
     mipBias: -1
     wrapMode: -1
+=======
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: -1
+    wrapV: -1
+    wrapW: -1
+>>>>>>> Stashed changes
   nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
@@ -52,16 +76,28 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+<<<<<<< Updated upstream
+=======
+    resizeAlgorithm: 0
+>>>>>>> Stashed changes
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+<<<<<<< Updated upstream
+=======
+    androidETC2FallbackOverride: 0
+>>>>>>> Stashed changes
   spriteSheet:
     serializedVersion: 2
     sprites: []
     outline: []
+<<<<<<< Updated upstream
+=======
+    physicsShape: []
+>>>>>>> Stashed changes
   spritePackingTag: 
   userData: 
   assetBundleName: 
